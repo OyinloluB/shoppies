@@ -14,8 +14,8 @@ const Main = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
     return new Promise(async (reject) => {
+      setLoading(true);
       try {
         const response = await axios.get(
           `http://www.omdbapi.com/?s=${search}&apikey=59724328`
