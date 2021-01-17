@@ -1,0 +1,14 @@
+@import "../../styles/mixins.module.scss";
+
+.nominee {
+  @include grid(auto auto);
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+
+  @media screen and (max-width: 768px) {
+    @include grid(auto);
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/mixins.module.scss";
+
+.container {
+  background: white;
+  box-shadow: 7px 7px 19px #ebebeb, -7px -7px 19px #fafafa;
+  padding: 15px;
+}
+
+.result {
+  @include grid(auto auto);
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+
+  @media screen and (max-width: 768px) {
+    @include grid(auto);
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

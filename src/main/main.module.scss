@@ -1,0 +1,37 @@
+@import "../styles/mixins.module.scss";
+
+.container {
+  padding: 20px 120px;
+  font-family: "Mulish", sans-serif;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px;
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .body {
+    @include grid(50% 50%);
+    column-gap: 5vh;
+
+    @media screen and (max-width: 768px) {
+      @include grid(100%);
+    }
+  }
+
+  button {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
